@@ -1,4 +1,1144 @@
-* {
-  margin: 0;
-  padding: 0;
+
+@font-face {
+  src: url(fonts/CreteRound-Regular.ttf);
+  font-family: "Crete Round";
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato-Regular.ttf);
+}
+
+@media (max-width: 768px) {
+  * {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  .above-nav {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    height: 30px;
+    width: auto;
+    justify-self: flex-start;
+    flex-grow: 0;
+    margin-left: 5%;
+  }
+
+  .hamburger-icon {
+    height: 100%;
+  }
+
+  .school-logo {
+    justify-self: center;
+    margin: auto;
+    height: 75px;
+  }
+
+  .school-logo-img {
+    height: 100%;
+  }
+
+  .close-icon {
+    position: absolute;
+    width: 20px;
+    height: auto;
+    top: 1rem;
+    right: 2rem;
+    z-index: 2;
+  }
+
+  .close-icon img {
+    z-index: 2;
+  }
+
+  .nav-menu {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    padding-top: 40px;
+    background-color: rgb(29, 28, 28);
+    background-image: url(./images/BG-design.png);
+    background-blend-mode: multiply;
+    background-size: 130px;
+    list-style-type: none;
+    z-index: 10;
+    margin-left: -1000px;
+    transition-property: margin-left;
+    transition-duration: 1s;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: #fff5e1;
+  }
+
+  .nav-links ul {
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .nav-links a:hover {
+    color: #ef513c;
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+
+    /* margin: 0 5%; */
+    background-image: url(./images/assembly-dance.jpg);
+    background-color: rgba(241, 241, 241, 1);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    overflow: hidden;
+  }
+
+  .chess-deco {
+    width: 60px;
+    rotate: 135deg;
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    z-index: -1;
+    filter: opacity(10%);
+  }
+
+  .intro-text {
+    color: #ef513cb3;
+    font-size: 2rem;
+    z-index: 7;
+    -webkit-background-clip: text;
+    background-image: url(./images/crayons.jpg);
+    background-position-x: -20%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+  }
+
+  .slogan {
+    margin-bottom: 0;
+    font-weight: 100;
+    color: #ef513cb3;
+  }
+
+  .rss {
+    margin: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+  }
+
+  .mission {
+    background-color: #f7f7f8;
+    padding: 0.5rem 0.3rem;
+    font-size: 0.8rem;
+    margin: 1rem 0.5rem 0;
+    border: 4px solid #fff;
+  }
+
+  .school-dets {
+    background-color: #f7f7f8;
+    padding: 3rem 0 4rem;
+    margin-top: 1rem;
+
+    /* text-align: center; */
+    position: relative;
+  }
+
+  .timetable {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-family: 'Inter', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 2;
+    padding: 1rem 0;
+  }
+
+  .location {
+    font-size: 1.5rem;
+  }
+
+  .circle {
+    width: 80px;
+    border-radius: 60%;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    z-index: 3;
+  }
+
+  #features {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 auto;
+    background-image: url(./images/repeat-bg.png);
+  }
+
+  .school-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .school-values-title {
+    align-self: center;
+    font-size: 1.7rem;
+    padding: 2rem 0 0 0;
+  }
+
+  .title-line {
+    border-bottom: 1px solid rgb(239, 81, 60);
+    width: 53px;
+    height: 16px;
+    margin: 0 auto 54px;
+  }
+
+  .school-feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 0.5rem;
+    width: 90%;
+    margin: 0 3%;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .feature-icon {
+    width: 15%;
+  }
+
+  .feature-icon img {
+    width: 100%;
+  }
+
+  .feature-item {
+    color: #ef513c;
+    width: 20%;
+    font-size: 1.2rem;
+  }
+
+  .feature-desc {
+    /* margin: auto; */
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .view-school-values {
+    align-self: center;
+    padding: 2rem;
+    margin: 4rem;
+    width: 70%;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #ec5242;
+    border: none;
+  }
+
+  #speakers {
+    /* border: 3px solid salmon; */
+  }
+
+  .main-staff-members {
+    text-align: center;
+    font-weight: 100;
+    padding: 2rem 0;
+
+    /* font-style: normal; */
+  }
+
+  .teachers {
+    /* border: 5px solid blueviolet; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teacher {
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: 0.25fr 0.25fr 0.1fr 3fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+    margin: 5%;
+  }
+
+  .teacher-img-div {
+    /* border: 2px solid green; */
+    grid-row: span 4;
+    position: relative;
+  }
+
+  .teacher-img {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .chessboard {
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .teacher-name {
+    /* border: 2px solid green; */
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .teacher-prof {
+    /* border: 2px solid green; */
+    color: #ff4f38;
+    font-style: italic;
+  }
+
+  .teacher-line {
+    width: 20px;
+    height: 0;
+    border: 1px solid rgba(162, 161, 161, 0.603);
+  }
+
+  .teacher-desc {
+    /* border: 2px solid green; */
+
+    /* grid-column: span 2; */
+
+    /* margin: 0 5%; */
+  }
+
+  .more-teachers {
+    /* text-align: center; */
+    margin: auto;
+    width: 90%;
+    padding: 3%;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    border: 2px solid #d3d3d3;
+    border-radius: 4px;
+  }
+
+  footer {
+    background-color: #2e2e2e;
+    height: 200px;
+  }
+
+  .about {
+    background-color: #f7f7f8;
+    text-align: center;
+    padding-top: 5%;
+    position: relative;
+  }
+
+  .about-royal {
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .dotted-line {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .key-details {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .small-note {
+    font-size: 0.7rem;
+    margin: 2rem auto;
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+
+  .about-royal-logo {
+    background-color: #fff;
+  }
+
+  .desk-only {
+    display: none;
+  }
+
+  .royal-logo-title {
+    font-size: 2rem;
+    font-weight: 100;
+    padding-top: 2rem;
+  }
+
+  .logo-img {
+    height: 10rem;
+    border: 1px solid rgba(128, 128, 128, 0.27);
+    margin-bottom: 2rem;
+  }
+
+  .royal-logo-desc {
+    width: 90%;
+    margin: auto;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .past-img {
+    height: 30rem;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 3rem auto 7rem;
+  }
+
+  .past-term-highlights {
+    padding-top: 2rem;
+    background-color: #fff;
+    border-top: 1px solid #d3d3d3;
+    padding-bottom: 2rem;
+  }
+
+  .highlight-img {
+    height: 50%;
+  }
+
+  .highlight-img:hover {
+    filter: grayscale();
+  }
+
+  .high1 {
+    background-image: url(./images/class-of-2022-land.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 50%;
+  }
+
+  .high2 {
+    background-image: url(./images/science-class-land.jpg);
+    height: 50%;
+  }
+
+  .highlight {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec5342d6;
+    background-blend-mode: multiply;
+  }
+
+  .highlight:hover {
+    filter: grayscale();
+  }
+
+  #partners {
+    display: none;
+
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.319);
+    background-color: rgb(61, 61, 61);
+    filter: grayscale(100%);
+  }
+
+  #about-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.319);
+    background-color: rgb(61, 61, 61);
+    filter: grayscale(100%);
+  }
+
+  .partners {
+    width: 100%;
+    filter: grayscale(100%);
+    filter: invert(76%);
+    grid-column: span 2;
+  }
+
+  .partners-title {
+    color: rgba(128, 128, 128, 0.968);
+  }
+
+  .partners-div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 0 10% 5%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.319);
+    gap: 2rem;
+  }
+
+  .kakao {
+    grid-column: 2/span 2;
+  }
+
+  .airbnb {
+    grid-column: span 2;
+  }
+
+  #footer {
+    display: none;
+
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 5%;
+    line-height: 1.6;
+  }
+
+  #footer a {
+    color: #ff4f38;
+    text-decoration: none;
+  }
+
+  #about-footer {
+    background-color: #fff;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    line-height: 1.6;
+    width: 80%;
+    padding-top: 3rem;
+    margin: auto;
+    font-size: 0.7rem;
+  }
+
+  .cc-icon1 {
+    width: 50%;
+    height: 20%;
+    filter: invert(100%);
+  }
+}
+
+@media (min-width: 769px) {
+  * {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .above-nav {
+    height: 36px;
+    background-color: rgb(62, 62, 62);
+    text-align: right;
+    line-height: 36px;
+    vertical-align: middle;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .language {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 3% 0 3%;
+
+    /* height: 100%; */
+  }
+
+  .lang-text {
+    margin: 0;
+  }
+
+  .sm-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin: 3px 0 0 0;
+    filter: contrast(100);
+    height: 5px;
+
+    /* justify-content: flex-end; */
+  }
+
+  .sm {
+    height: 20px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: space-evenly;
+
+    /* margin: 0 1rem; */
+    align-items: center;
+    width: 100%;
+
+    /* box-shadow: 0px 2px 4px red; */
+
+    /* border: 2px solid red; */
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .school-logo {
+    /* justify-self: center; */
+
+    /* margin: auto; */
+    height: 75px;
+    margin: 0 2%;
+  }
+
+  .school-logo-img {
+    height: 100%;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .presentation a {
+    border: 5px solid #ec5242;
+    padding: 15px;
+    text-decoration: none;
+    color: #ec5242;
+  }
+
+  .nav-links a:hover {
+    color: #ff4f38;
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    padding: 140px 5% 0 12%;
+    background-image: url(./images/assembly-dance.jpg);
+    background-color: rgba(241, 241, 241, 1);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    overflow: hidden;
+  }
+
+  .chess-deco {
+    width: 60px;
+    rotate: 135deg;
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    z-index: -1;
+    filter: opacity(10%);
+  }
+
+  .intro-text {
+    color: #ec5242b3;
+    font-size: 3rem;
+    z-index: 7;
+    -webkit-background-clip: text;
+    background-image: url(./images/crayons.jpg);
+    background-position-x: -20%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+  }
+
+  .slogan {
+    margin: 0;
+    font-weight: 100;
+    color: #ef513cb3;
+  }
+
+  .rss {
+    margin: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+  }
+
+  .about-rss {
+    color: #ec5242;
+    font-size: 3rem;
+    z-index: 7;
+    margin: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+  }
+
+  .about-slogan {
+    margin: 0;
+    font-weight: 100;
+    color: #ec5242;
+  }
+
+  .mission {
+    background-color: #f7f7f8;
+    padding: 0.5rem 0.3rem;
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem 0;
+    border: 4px solid #fff;
+    width: 70%;
+    line-height: 220%;
+  }
+
+  .school-dets {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .timetable {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-family: 'Inter', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 2;
+  }
+
+  .location {
+    font-size: 1.5rem;
+  }
+
+  .circle {
+    width: 80px;
+    border-radius: 60%;
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    z-index: 0;
+  }
+
+  #features {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 auto;
+    background-image: url(./images/repeat-bg.png);
+    align-items: center;
+  }
+
+  .school-values-title {
+    align-self: center;
+    font-size: 1.7rem;
+    padding: 2rem 0 0 0;
+  }
+
+  .title-line {
+    border-bottom: 1px solid rgb(239, 81, 60);
+    width: 53px;
+    height: 16px;
+    margin: 0 auto 40px;
+  }
+
+  .school-features {
+    display: flex;
+    gap: 0.2rem;
+    width: 95%;
+  }
+
+  .school-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .school-feature:hover {
+    border: 2px solid #fff;
+  }
+
+  .feature-icon {
+    width: 35%;
+  }
+
+  .feature-icon img {
+    width: 100%;
+  }
+
+  .feature-item {
+    color: #ef513c;
+    text-align: center;
+  }
+
+  .feature-desc {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 5%;
+  }
+
+  .view-school-values {
+    align-self: center;
+    margin: 3rem 2% 4rem 0;
+    text-decoration: underline;
+  }
+
+  .mob-only {
+    display: none;
+  }
+
+  #speakers {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
+  }
+
+  .main-staff-members {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 2rem;
+  }
+
+  .teachers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teacher {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 0.25fr 0.25fr 0.05fr 3fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+    margin: 5%;
+  }
+
+  .teacher-img-div {
+    grid-row: span 4;
+    position: relative;
+  }
+
+  .teacher-img {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .chessboard {
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 20%;
+  }
+
+  .teacher-name {
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .teacher-prof {
+    color: #ff4f38;
+    width: 90%;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
+  .teacher-line {
+    width: 20px;
+    height: 0;
+    border: 1px solid rgba(162, 161, 161, 0.603);
+  }
+
+  .teacher-desc {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  .more-teachers {
+    display: none;
+    text-align: end;
+    grid-column: span 2;
+    margin-right: 3%;
+  }
+
+  footer {
+    background-color: #2e2e2e;
+    height: 200px;
+  }
+
+  .about {
+    background-color: #f7f7f8;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .about-royal {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(62, 62, 62, 0.155);
+  }
+
+  .dotted-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    height: 0;
+  }
+
+  .key-details {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .small-note {
+    font-size: 0.8rem;
+    margin: 2rem auto;
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+
+  .about-royal-logo {
+    background-color: #fff;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .royal-logo-title {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .royal-desc {
+    width: 70%;
+    align-self: center;
+    line-height: 1.6;
+  }
+
+  .logo-img {
+    height: 10rem;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    margin-bottom: 2rem;
+  }
+
+  .royal-logo-desc {
+    width: 70%;
+    align-self: center;
+    line-height: 1.3;
+  }
+
+  .royal-logo-desc-2 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.403);
+    z-index: 5;
+    padding: 0 15% 2rem;
+    align-self: center;
+  }
+
+  .past-term-highlights {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+  }
+
+  .past-term-title {
+    padding-top: 2rem;
+  }
+
+  .past-img {
+    height: 15rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3rem auto 7rem;
+  }
+
+  .highlight-img:hover {
+    filter: grayscale();
+  }
+
+  .high1 {
+    background-image: url(./images/class-of-2022-land.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+  }
+
+  .high2 {
+    background-image: url(./images/science-class-land.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    font-weight: 800;
+  }
+
+  .highlight {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec5342d6;
+    background-blend-mode: multiply;
+  }
+
+  .highlight:hover {
+    filter: grayscale();
+  }
+
+  #partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.319);
+    background-color: rgb(61, 61, 61);
+    filter: grayscale(100%);
+  }
+
+  #about-partners {
+    display: none;
+  }
+
+  .partners-title {
+    color: rgba(128, 128, 128, 0.968);
+  }
+
+  .partners {
+    width: 15%;
+    filter: grayscale(100%);
+    filter: invert(76%);
+  }
+
+  .partners-div {
+    display: flex;
+    justify-content: center;
+    padding: 0 10% 5%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.319);
+    gap: 2rem;
+  }
+
+  #footer {
+    background-color: #f8f8f8;
+    padding: 5%;
+  }
+
+  #about-footer {
+    background-color: #272a31;
+    padding: 5%;
+    color: #fff;
+  }
+
+  #about-footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    line-height: 1.6;
+    width: 80%;
+    margin: auto;
+    font-size: 0.7rem;
+  }
+
+  .about-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    line-height: 1.6;
+    width: 80%;
+    margin: auto;
+    font-size: 0.7rem;
+  }
+
+  #footer a {
+    /* color:#ff4f38; */
+    text-decoration: none;
+  }
+
+  .side-footer {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    width: 50%;
+  }
+
+  .cc-icon1 {
+    width: 20%;
+    height: 20%;
+    filter: invert(100%);
+  }
 }
