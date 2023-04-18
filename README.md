@@ -73,7 +73,7 @@
 
 - [Live Demo Link](https://sunga12.github.io/Capstone-project-1/)
 
-- [Video Presentation]()
+- [Video Presentation](https://drive.google.com/file/d/10UmuBKbd77u0NkQ8UM0JKUWzYm9JQo3x/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
