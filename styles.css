@@ -73,7 +73,6 @@
   }
 
   .nav-menu {
-    /* display: none; */
     position: absolute;
     top: 0;
     left: 0;
@@ -118,8 +117,6 @@
     display: flex;
     flex-direction: column;
     padding: 0 5% 0 5%;
-
-    /* margin: 0 5%; */
     background-image: url(./images/assembly-dance.jpg);
     background-color: rgba(241, 241, 241, 1);
     background-blend-mode: overlay;
@@ -175,8 +172,6 @@
     background-color: #f7f7f8;
     padding: 3rem 0 4rem;
     margin-top: 1rem;
-
-    /* text-align: center; */
     position: relative;
   }
 
@@ -257,7 +252,6 @@
   }
 
   .feature-desc {
-    /* margin: auto; */
     width: 50%;
     font-size: 1rem;
     line-height: 1.6rem;
@@ -274,26 +268,18 @@
     border: none;
   }
 
-  #speakers {
-    /* border: 3px solid salmon; */
-  }
-
   .main-staff-members {
     text-align: center;
     font-weight: 100;
     padding: 2rem 0;
-
-    /* font-style: normal; */
   }
 
   .teachers {
-    /* border: 5px solid blueviolet; */
     display: flex;
     flex-direction: column;
   }
 
   .teacher {
-    /* border: 2px solid blue; */
     display: grid;
     grid-template-columns: 30% 65%;
     grid-template-rows: 0.25fr 0.25fr 0.1fr 3fr;
@@ -303,7 +289,6 @@
   }
 
   .teacher-img-div {
-    /* border: 2px solid green; */
     grid-row: span 4;
     position: relative;
   }
@@ -325,14 +310,12 @@
   }
 
   .teacher-name {
-    /* border: 2px solid green; */
     width: 90%;
     font-size: 1.5rem;
     font-weight: 800;
   }
 
   .teacher-prof {
-    /* border: 2px solid green; */
     color: #ff4f38;
     font-style: italic;
   }
@@ -343,16 +326,7 @@
     border: 1px solid rgba(162, 161, 161, 0.603);
   }
 
-  .teacher-desc {
-    /* border: 2px solid green; */
-
-    /* grid-column: span 2; */
-
-    /* margin: 0 5%; */
-  }
-
   .more-teachers {
-    /* text-align: center; */
     margin: auto;
     width: 90%;
     padding: 3%;
