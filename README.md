@@ -35,7 +35,7 @@
 # 📖 Capstone Project 1 <a name="about-project"></a>
 
 
-**Capstone Project 1** is a solo project done in week 5 of module 1. Built using the Cindy Chen design for Royal Secondary School
+**Capstone Project 1** is a solo project done in week 5 of module 1. Built using the Cindy Chen design for Royal Primary & Secondary School
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,7 +71,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://sunga12.github.io/Capstone-project-1/)
 
 - [Video Presentation]()
 
@@ -130,7 +130,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: Github Pages
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
