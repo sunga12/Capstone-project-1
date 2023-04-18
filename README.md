@@ -165,12 +165,12 @@ If you like this project follow me on GitHub!
 
 I would like to thank Microverse for this opportunity to become a software developer.
 
+I would also like to thank Cindy Shin for the template on Behance: (https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-Cindy Shin on Behance: (https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
